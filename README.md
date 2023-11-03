@@ -23,7 +23,7 @@
     $redisDb       = 9;
 
     $sqlCacheClient = new \Coco\sqlCache\SqlCache(redisHost: $redisHost, prefix: 'test_db');
-    $sqlCacheClient->setEnable(false);
+    $sqlCacheClient->setEnable(true);
     $sqlCacheClient->setIsAnalysisEnabled(true);
     //    $sqlCacheClient->addIgnoreTable('table_1');
 
@@ -214,7 +214,7 @@ WHERE tc.cname = 'goods_type' ;
 You can install the package via composer:
 
 ```bash
-composer require coco-project/sql-cache --no-dev
+composer require coco-project/sql-cache
 ```
 
 ## Testing

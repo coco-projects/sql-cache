@@ -13,7 +13,7 @@
     $redisDb       = 9;
 
     $sqlCacheClient = new \Coco\sqlCache\SqlCache(redisHost: $redisHost, prefix: 'test_db');
-    $sqlCacheClient->setEnable(false);
+    $sqlCacheClient->setEnable(true);
     $sqlCacheClient->setIsAnalysisEnabled(true);
     //    $sqlCacheClient->addIgnoreTable('table_1');
 
