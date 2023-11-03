@@ -3,11 +3,10 @@
 	"description"          : "Based on the lexical analysis of \"update,\" \"select,\" \"insert,\" and \"delete\" SQL statements, an automatic caching strategy is implemented. The strategy involves caching the data when executing a select operation and associating the table name contained in the SQL statement with the corresponding cached records. When executing update, insert, or delete operations, the table name from the SQL statement is extracted, and any cached records containing this table name from previous select operations are deleted. This strategy enables seamless caching without delay and eliminates the need to worry about data synchronization issues. It is particularly effective for tables with infrequent data modifications. For tables with frequent modifications, they can be ignored by configuring the strategy accordingly.",
 	"type"                 : "library",
 	"license"              : "MIT",
-	"minimum-stability"    : "dev",
 	"require"              : {
 		"php"                      : ">=8.0",
-		"greenlion/php-sql-parser" : "dev-master",
-		"symfony/cache"            : "5.4.x-dev"
+		"greenlion/php-sql-parser" : "^4.6",
+		"symfony/cache"            : "^5.4"
 	},
 	"autoload"             : {
 		"psr-4" : {
