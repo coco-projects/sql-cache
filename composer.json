@@ -5,6 +5,7 @@
 	"license"              : "MIT",
 	"require"              : {
 		"php"                      : ">=8.0",
+		"coco-project/logger"      : "^1.0",
 		"greenlion/php-sql-parser" : "^4.6",
 		"symfony/cache"            : "^5.4"
 	},

@@ -17,19 +17,17 @@ FROM
   `smartpanel`.`table_1` 
 WHERE `id` = 1";
 
-    $sql2 = "UPDATE 
-  `smartpanel`.`table_2` 
+$sql2 = "UPDATE 
+  `smartpanel`.`table_2`
 SET
   `id` = 'id',
   `ids` = 'ids',
   `lang_code` = 'lang_code',
   `slug` = 'slug',
-  `value` = 'value' 
-WHERE `id` = 'id' ;
+  `value` = 'value'
+WHERE `id` = 'id' ;";
 
-";
-
-    $sql3 = "INSERT INTO `smartpanel`.`table_1` (
+$sql3 = "INSERT INTO `smartpanel`.`table_1` (
   `id`,
   `ids`,
   `lang_code`,
@@ -43,10 +41,7 @@ VALUES
     'lang_code',
     'slug',
     'value'
-  ) ;
-
-
-";
+  ) ;";
 
     $sqlCacheClient->clearBySql($sql1);
     $sqlCacheClient->clearBySql($sql2);
